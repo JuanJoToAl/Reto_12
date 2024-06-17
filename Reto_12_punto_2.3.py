@@ -67,6 +67,7 @@ def contar_palabras(lista) -> list:
 
     Returns:
         palabras (list): Contiene las 50 palabras más frecuentes
+        
         numeros (list): Contiene la frecuencia de cada palabra
     """
 
@@ -93,14 +94,14 @@ def contar_palabras(lista) -> list:
             palabras.append(palabra_actual)
             numeros.append(contador)
         
-        else:
+        elif contador > numeros[numeros.index(min(numeros))]:
+
             # Se encuentra el mínimo en numeros
             min_indice = numeros.index(min(numeros))
 
-            # Si se cumple condicional se remplaza el mínimo y su palabra
-            if contador > numeros[min_indice]:
-                palabras[min_indice] = palabra_actual
-                numeros[min_indice] = contador
+            # Se remplaza el mínimo y su palabra
+            palabras[min_indice] = palabra_actual
+            numeros[min_indice] = contador
 
     return palabras, numeros
 

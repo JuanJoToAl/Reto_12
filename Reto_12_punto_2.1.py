@@ -22,7 +22,8 @@ def solo_vocales(archivo) -> str:
         archivo: Archivo que contiene el texto a procesar.
 
     Returns:
-        String que contiene todas las vocales minúsculas del archivo.
+        texto_vocales_minusculas (str): Contiene todas las vocales minúsculas
+        del archivo.
     """
 
     # Se almacena contenido del archivo en formato str
@@ -54,7 +55,15 @@ def contar_vocales(texto_vocales_minusculas) -> int:
         texto_vocales_minusculas: String que contiene vocales minúsculas.
 
     Returns:
-        Tupla que contiene la cantidad de cada vocal en el string.
+        cantidad_a (int): Cantidad de vocal a en el string.
+
+        cantidad_e (int): Cantidad de vocal e en el string. 
+        
+        cantidad_i (int): Cantidad de vocal i en el string.
+
+        cantidad_o (int): Cantidad de vocal o en el string.
+        
+        cantidad_u (int): Cantidad de vocal u en el string.
     """
 
     cantidad_a = 0

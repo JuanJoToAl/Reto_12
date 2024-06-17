@@ -18,7 +18,8 @@ def solo_consonantes(archivo) -> str:
         archivo: Archivo que contiene el texto a procesar.
 
     Returns:
-        String que contiene todas las consonantes minúsculas del archivo.
+        consonantes_minusculas (str): Contiene todas las consonantes minúsculas
+        del archivo.
     """
     
     # Se almacena contenido del archivo en formato str
@@ -35,13 +36,10 @@ def solo_consonantes(archivo) -> str:
         caracter = caracter.lower()
 
         # Comprobación si caracter es una letra minúscula con ASCII
-        if 98 <= ord(caracter) and ord(caracter) <= 122:
+        if 98 <= ord(caracter) and ord(caracter) <= 122 and caracter not in  vocales:
 
-            # Se comprueba si el caracter es una consonante
-            if caracter not in  vocales:
-
-                # Si se cumple condución el caracter se añade a variable
-                consonantes_minusculas += caracter
+            # Si se cumple condución el caracter se añade a variable
+            consonantes_minusculas += caracter
 
     # Se retorna str con todas las consonantes del archivo
     return consonantes_minusculas
@@ -53,10 +51,10 @@ def contar_consonantes(consonantes_minusculas) -> int:
     que se encuentran en el string.
 
     Args:
-        consonantes_minusculas: String que contiene consonantes minúsculas. 
+        consonantes_minusculas (str): Contiene consonantes minúsculas. 
 
     Returns:
-        Entero que representa la cantidad total de consonantes en el string.
+        total_consonantes (int): Cantidad total de consonantes en el string.
     """
 
     # Se cuenta la cantidad todal de consonantes en el archivo
