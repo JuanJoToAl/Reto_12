@@ -12,7 +12,7 @@ contador: int
 min_indice: int
 max_indice: int
 
-def palabras_archivo(contenido) -> list:
+def palabras_archivo(contenido : str) -> list:
     """
     Esta función toma una cadena de texto, la procesa y devuelve una lista 
     con las palabras de la cadena.
@@ -57,7 +57,7 @@ def palabras_archivo(contenido) -> list:
 
     return lista
 
-def contar_palabras(lista) -> list:
+def contar_palabras(lista : list) -> list:
     """
     Cuenta las palabras más frecuentes en una lista y las devuelve en dos
     listas.
@@ -105,7 +105,7 @@ def contar_palabras(lista) -> list:
 
     return palabras, numeros
 
-def ordenar_palabras(palabras, numeros) -> list:
+def ordenar_palabras(palabras : list, numeros : list) -> list:
     """
     Ordena las palabras más frecuentes en una lista de mayor a menor frecuencia.
 
@@ -141,7 +141,7 @@ def ordenar_palabras(palabras, numeros) -> list:
     
     return veces_palabras
 
-def ordenar_palabras_texto_corto(palabras, numeros) -> list:
+def ordenar_palabras_texto_corto(palabras : list, numeros : list) -> list:
     """
     Ordena las palabras más frecuentes en una lista de mayor a menor frecuencia.
 

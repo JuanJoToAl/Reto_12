@@ -45,14 +45,14 @@ def solo_vocales(archivo) -> str:
     # Se retorna str con todas las vocales del archivo
     return texto_vocales_minusculas
 
-def contar_vocales(texto_vocales_minusculas) -> int:
+def contar_vocales(texto_vocales_minusculas : str) -> int:
     """
     La función recibe un string que contiene vocales minúsculas y devuelve 
     una tupla que contiene la cantidad de cada vocal que se encuentran en 
     el string.
 
     Args:
-        texto_vocales_minusculas: String que contiene vocales minúsculas.
+        texto_vocales_minusculas (str): Contiene vocales minúsculas.
 
     Returns:
         cantidad_a (int): Cantidad de vocal a en el string.
