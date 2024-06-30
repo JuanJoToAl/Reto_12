@@ -52,14 +52,14 @@ def solo_vocales(archivo) -> str:
     # Se retorna str con todas las vocales del archivo
     return texto_vocales_minusculas
 
-def contar_vocales(texto_vocales_minusculas) -> int:
+def contar_vocales(texto_vocales_minusculas : str) -> int:
     """
     La función recibe un string que contiene vocales minúsculas y devuelve 
     una tupla que contiene la cantidad de cada vocal que se encuentran en 
     el string.
 
     Args:
-        texto_vocales_minusculas: String que contiene vocales minúsculas.
+        texto_vocales_minusculas (str): String que contiene vocales minúsculas.
 
     Returns:
         cantidad_a (int): Cantidad de vocal a en el string.
@@ -212,7 +212,7 @@ contador: int
 min_indice: int
 max_indice: int
 
-def palabras_archivo(contenido) -> list:
+def palabras_archivo(contenido : str) -> list:
     """
     Esta función toma una cadena de texto, la procesa y devuelve una lista 
     con las palabras de la cadena.
@@ -305,7 +305,7 @@ def contar_palabras(lista) -> list:
 
     return palabras, numeros
 
-def ordenar_palabras(palabras, numeros) -> list:
+def ordenar_palabras(palabras : list, numeros : list) -> list:
     """
     Ordena las palabras más frecuentes en una lista de mayor a menor frecuencia.
 
@@ -341,7 +341,7 @@ def ordenar_palabras(palabras, numeros) -> list:
     
     return veces_palabras
 
-def ordenar_palabras_texto_corto(palabras, numeros) -> list:
+def ordenar_palabras_texto_corto(palabras : list, numeros : list) -> list:
     """
     Ordena las palabras más frecuentes en una lista de mayor a menor frecuencia.
 
