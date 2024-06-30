@@ -163,7 +163,7 @@ def solo_consonantes(archivo) -> str:
     # Se retorna str con todas las consonantes del archivo
     return consonantes_minusculas
 
-def contar_consonantes(consonantes_minusculas) -> int:
+def contar_consonantes(consonantes_minusculas : str) -> int:
     """
     La función recibe un string que contiene consonantes minúsculas y 
     devuelve un entero que representa la cantidad total de consonantes 
