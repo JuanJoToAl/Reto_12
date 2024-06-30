@@ -257,7 +257,7 @@ def palabras_archivo(contenido : str) -> list:
 
     return lista
 
-def contar_palabras(lista) -> list:
+def contar_palabras(lista : list) -> list:
     """
     Cuenta las palabras más frecuentes en una lista y las devuelve en dos
     listas.
