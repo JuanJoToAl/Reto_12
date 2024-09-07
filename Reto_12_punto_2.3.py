@@ -32,8 +32,9 @@ def palabras_archivo(contenido : str) -> list:
     for caracter in contenido:
         caracter = caracter.lower()
 
-        # Si caracteres son letras de alfabeto en inglés se añaden a str
-        if 97 <= ord(caracter) and ord(caracter) <= 122:
+        # Si caracteres cumplen el condicional se añaden a str
+        if (64 == ord(caracter) or 46 == ord(caracter) or 
+            (97 <= ord(caracter) and ord(caracter) <= 122)):
             texto_para_lista += caracter
 
         # Si str contiene una letra este se vacía, ya que no cuenta como palabra
